@@ -9,5 +9,6 @@ import java.util.List;
  */
 public interface UserService {
     void save(UserDTO userDTO);
+    boolean isExistsUser(String userId);
 
 }

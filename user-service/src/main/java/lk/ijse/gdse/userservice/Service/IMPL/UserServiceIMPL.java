@@ -26,4 +26,9 @@ public class UserServiceIMPL implements UserService {
         userServiceDAO.save(conversion.convertToEntity(userDTO));
     }
 
+    @Override
+    public boolean isExistsUser(String userId) {
+        return userServiceDAO.existsById(userId);
+    }
+
 }
