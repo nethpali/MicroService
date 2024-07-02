@@ -7,4 +7,5 @@ import lk.ijse.gdse.userservice.Dto.UserDTO;
  */
 public interface UserService {
     void save(UserDTO userDTO);
+    void deleteUser(String userId);
 }

@@ -23,4 +23,9 @@ public class UserServiceIMPL implements UserService {
     public void save(UserDTO userDTO) {
         userServiceDAO.save(conversion.convertToEntity(userDTO));
     }
+
+    @Override
+    public void deleteUser(String userId) {
+        userServiceDAO.deleteById(userId);
+    }
 }

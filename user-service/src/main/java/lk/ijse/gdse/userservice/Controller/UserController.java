@@ -27,6 +27,13 @@ public class UserController {
         userService.save(userDTO);
         return ResponseEntity.ok("User saved successfully");
     }
+
+    @PutMapping(value = "/update",consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<?> update(@RequestBody UserDTO userDTO) {
+        userService.save(userDTO);
+        return ResponseEntity.ok("User updated successfully");
+    }
+
 }
 
 
